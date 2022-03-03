@@ -4,6 +4,7 @@
 // helper
 @import "./helper/mixin";
 @import "./helper/variable";
-// base
-@import "./base/customize";
-@import "./base/reset";
+//layout
+@import "./layout/header";
+//component
+@import "./components/button";

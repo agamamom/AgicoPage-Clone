@@ -1,0 +1,39 @@
+.btn-primary {
+    font-size: 1.6rem;
+    padding: 14px 45px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.button-outline-primary {
+    @include buttonStyle($main-color, transparent);
+    font-size: 1.6rem;
+    padding: 14px 45px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    border: 2px solid $main-color;
+    overflow: hidden;
+    transition: linear 0.3s;
+}
+.button-outline-primary::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -133%;
+    top: -3px;
+    width: 129%;
+    height: 150%;
+    transition: linear 0.3s;
+    background: linear-gradient(45deg, #00a8f4, #02d1a1);
+}
+.button-outline-primary:hover {
+    color: #fff;
+}
+.button-outline-primary:hover::after {
+    transform: translateX(103%);
+}
