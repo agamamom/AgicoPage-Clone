@@ -1,23 +1,29 @@
-.btn-primary {
+.button-primary {
     font-size: 1.6rem;
-    padding: 14px 45px;
+    padding: 15px 44px;
     font-weight: 500;
     position: relative;
     z-index: 1;
     border-radius: 30px;
 }
-
-.button-outline-primary {
+.btn {
     @include buttonStyle($main-color, transparent);
     font-size: 1.6rem;
-    padding: 14px 45px;
+    padding: 15px 44px;
     font-weight: 500;
     position: relative;
     z-index: 1;
-    border-radius: 30px;
-    border: 2px solid $main-color;
+    border-radius: 45px;
+    border: 1px solid $main-color;
     overflow: hidden;
     transition: linear 0.3s;
+    &:focus {
+        box-shadow: none;
+    }
+}
+.button-outline-primary {
+    border: 2px solid $main-color;
+    color: $main-color;
 }
 .button-outline-primary::after {
     content: "";
