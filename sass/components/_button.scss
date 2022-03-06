@@ -1,10 +1,6 @@
 .button-primary {
-    font-size: 1.6rem;
-    padding: 15px 44px;
-    font-weight: 500;
-    position: relative;
-    z-index: 1;
-    border-radius: 30px;
+    color: #fff;
+    background: linear-gradient(45deg, #00a8f4, #02d1a1);
 }
 .btn {
     @include buttonStyle($main-color, transparent);
@@ -16,7 +12,10 @@
     border-radius: 45px;
     border: 1px solid $main-color;
     overflow: hidden;
-    transition: linear 0.3s;
+    transition: linear 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:focus {
         box-shadow: none;
     }
@@ -31,9 +30,9 @@
     position: absolute;
     z-index: -1;
     left: -133%;
-    top: -3px;
-    width: 129%;
-    height: 150%;
+    top: -14px;
+    width: 132%;
+    height: 160%;
     transition: linear 0.3s;
     background: linear-gradient(45deg, #00a8f4, #02d1a1);
 }
@@ -41,5 +40,5 @@
     color: #fff;
 }
 .button-outline-primary:hover::after {
-    transform: translateX(103%);
+    transform: translateX(92%);
 }

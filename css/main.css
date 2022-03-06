@@ -40,7 +40,7 @@ ul {
 }
 
 .container {
-  width: 72%;
+  width: 76%;
   margin: 0 auto;
 }
 
@@ -50,6 +50,10 @@ ul {
 
 .header .navbar .navbar-brand {
   margin-right: 12rem;
+}
+
+.header .navbar .button-outline-primary {
+  color: #fff;
 }
 
 .header .navbar .nav-link {
@@ -118,13 +122,79 @@ ul {
   color: #00e0d8;
 }
 
-.button-primary {
-  font-size: 1.6rem;
-  padding: 15px 44px;
-  font-weight: 500;
+.banner {
   position: relative;
-  z-index: 1;
-  border-radius: 30px;
+  padding: 150px 0 260px;
+}
+
+.banner .row {
+  margin-right: -25%;
+}
+
+.banner .row .banner-left span {
+  position: absolute;
+  font-size: 20rem;
+  font-weight: 600;
+  left: 0;
+  top: 10px;
+  opacity: 0.07;
+}
+
+.banner .row .banner-left h1 {
+  font-size: 6rem;
+  color: #242f3e;
+  margin-bottom: 8px;
+}
+
+.banner .row .banner-left p {
+  text-transform: initial;
+  opacity: 0.7;
+}
+
+.banner .row .banner-left .banner-button {
+  margin-top: 36px;
+}
+
+.banner .row .banner-left .banner-button .btn {
+  padding: 14px 49px;
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.banner .row .banner-left .banner-button .btn i {
+  font-size: 3rem;
+  margin-right: 12px;
+}
+
+.banner .row .banner-left .banner-button .btn:hover {
+  color: #fff;
+}
+
+.banner .row .banner-left .banner-button .button-primary {
+  color: #fff;
+}
+
+.banner .row .banner-right {
+  -webkit-box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.103);
+          box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.103);
+}
+
+.banner .background-img {
+  position: absolute;
+  top: 0;
+  right: -84px;
+  z-index: -2;
+}
+
+.banner .background-img img {
+  width: 770px;
+}
+
+.button-primary {
+  color: #fff;
+  background: linear-gradient(45deg, #00a8f4, #02d1a1);
 }
 
 .btn {
@@ -138,8 +208,17 @@ ul {
   border-radius: 45px;
   border: 1px solid #00e0d8;
   overflow: hidden;
-  -webkit-transition: linear 0.3s;
-  transition: linear 0.3s;
+  -webkit-transition: linear 0.1s;
+  transition: linear 0.1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn:focus {
@@ -158,9 +237,9 @@ ul {
   position: absolute;
   z-index: -1;
   left: -133%;
-  top: -3px;
-  width: 129%;
-  height: 150%;
+  top: -14px;
+  width: 132%;
+  height: 160%;
   -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
   background: linear-gradient(45deg, #00a8f4, #02d1a1);
@@ -171,7 +250,7 @@ ul {
 }
 
 .button-outline-primary:hover::after {
-  -webkit-transform: translateX(103%);
-          transform: translateX(103%);
+  -webkit-transform: translateX(92%);
+          transform: translateX(92%);
 }
 /*# sourceMappingURL=main.css.map */
