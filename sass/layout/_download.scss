@@ -1,0 +1,31 @@
+.download {
+    background: linear-gradient(180deg, #625aff 20%, #b025ef 100%);
+    text-align: center;
+    .download__content {
+        margin: 0 40px;
+        h2 {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 38px;
+        }
+        p {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-transform: initial;
+        }
+        i {
+            padding: 36px;
+            background-color: white;
+            border-radius: 50%;
+            color: $main-color;
+            font-size: 2rem;
+            margin-top: 90px;
+            margin-bottom: 70px;
+        }
+        hr {
+            color: #b99dec;
+            margin-bottom: 90px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.counter {
+    .counter__wrapper {
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .counter__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                margin-bottom: 0;
+            }
+            & p:nth-of-type(1) {
+                font-size: 4rem;
+                color: $h-color;
+                font-weight: 400;
+            }
+        }
+    }
+}
