@@ -50,6 +50,11 @@ ul {
 
 .header {
   padding: 45px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .header .navbar .navbar-brand {
@@ -496,6 +501,7 @@ ul {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #625aff), to(#b025ef));
   background: linear-gradient(180deg, #625aff 20%, #b025ef 100%);
   text-align: center;
+  padding-bottom: 140px;
 }
 
 .download .download__content {
@@ -528,6 +534,106 @@ ul {
 .download .download__content hr {
   color: #b99dec;
   margin-bottom: 90px;
+}
+
+.download .download__content .download__logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.download .download__content .pulse-box .pulsate-css {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  -webkit-animation: pulse-around 1s linear infinite;
+          animation: pulse-around 1s linear infinite;
+}
+
+@-webkit-keyframes pulse-around {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes pulse-around {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+.download::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../../img/triangle-double.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25%;
+  height: 230px;
+  top: 0;
+  left: 0;
+}
+
+.download::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../img/triangle-double.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25%;
+  height: 230px;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.testimonial {
+  position: relative;
+  padding-bottom: 140px;
+}
+
+.testimonial::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: url("../../img/map.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 42%;
 }
 
 .button-primary {

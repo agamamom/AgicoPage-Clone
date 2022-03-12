@@ -1,6 +1,7 @@
 .download {
     background: linear-gradient(180deg, #625aff 20%, #b025ef 100%);
     text-align: center;
+    padding-bottom: 140px;
     .download__content {
         margin: 0 40px;
         h2 {
@@ -27,5 +28,61 @@
             color: #b99dec;
             margin-bottom: 90px;
         }
+        .download__logo {
+            img {
+                object-fit: contain;
+            }
+        }
+        .pulse-box {
+            .pulsate-css {
+                background-color: #fff;
+                border-radius: 50%;
+                height: 90px;
+                width: 90px;
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                animation: pulse-around 1s linear infinite;
+            }
+            @keyframes pulse-around {
+                0% {
+                    opacity: 0.6;
+                    transform: scale(1);
+                }
+                50% {
+                    opacity: 0.5;
+                    transform: scale(1.2);
+                }
+                100% {
+                    opacity: 0;
+                    transform: scale(1.4);
+                }
+            }
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url("../../img/triangle-double.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 25%;
+        height: 230px;
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url("../../img/triangle-double.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 25%;
+        height: 230px;
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
     }
 }

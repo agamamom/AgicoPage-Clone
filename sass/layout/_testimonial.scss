@@ -1,0 +1,17 @@
+.testimonial {
+    position: relative;
+    padding-bottom: 140px;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: url("../../img/map.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 42%;
+    }
+}

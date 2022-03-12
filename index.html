@@ -14,12 +14,14 @@
         rel="stylesheet">
     <!-- BS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- POPUP VIDEO -->
+    <link rel="stylesheet" href="./css/mklb.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <header class="header fixed-top bg-transparent">
+    <header class="header bg-transparent">
         <div class="container">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
@@ -240,23 +242,42 @@
             </div>
         </div>
     </section>
-    <section class="download section">
+    <section id="download" class="download section position-relative">
         <div class="container">
             <div class="download__content">
                 <h2>Download Agico Now</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. ut enim ad minim veniam quis nostrud exercitation ullamco laboris aliquip
-                    commodo consequat</p>
-                <a href="#">
-                    <i class="fa-solid fa-play"></i>
-                </a>
+                    commodo consequat
+                </p>
+                <div class="pulse-box position-relative">
+                    <a href="#download">
+                        <i class="fa-solid fa-play mklbItem"
+                            data-video-src="https://www.jqueryscript.net/dummy/1.mp4"></i>
+                    </a>
+                    <div class="pulsate-css position-absolute"></div>
+                </div>
                 <hr>
-                <div class="download__logo d-flex bg-black">
+                <div class="download__logo d-flex justify-content-between">
                     <img src="./img/client-logo-1-alt.png" alt="client1">
                     <img src="./img/client-logo-2-alt.png" alt="client2">
                     <img src="./img/client-logo-3-alt.png" alt="client3">
                     <img src="./img/client-logo-4-alt.png" alt="client4">
                     <img src="./img/client-logo-5-alt.png" alt="client5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/testimonial-img.png" alt="testimonial">
+                </div>
+                <div class="col-6">
+                    <p>Testimonials</p>
+                    <h2>What Our Clients Says?</h2>
+
                 </div>
             </div>
         </div>
@@ -278,6 +299,8 @@
     </script>
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
+    <!-- POPUP VIDEO -->
+    <script src="./js/mklb.js"></script>
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/e15516c5b2.js" crossorigin="anonymous"></script>
     <!--BS -->
