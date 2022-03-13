@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- POPUP VIDEO -->
     <link rel="stylesheet" href="./css/mklb.css">
+    <!-- CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -160,7 +163,7 @@
                 <div class="col-6 ps-5">
                     <div class="integration-right">
                         <p>01</p>
-                        <h2>Aspernatur Aut Odit Fugit Sed Quia Consetur.</h2>
+                        <h2 class="layout-title">Aspernatur Aut Odit Fugit Sed Quia Consetur.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipicing elit sed do usmod tempor incididunt.enim ad
                             minim veniam, quis nostrud exer citation ulla mco laboris nisi ut aliquip commodo.</p>
                         <div class="integration-itemUP pb-4">
@@ -195,7 +198,7 @@
                 <div class="col-6">
                     <div class="integrationTwo-left">
                         <p>02</p>
-                        <h2>Eausmod Tempor Magna Nostrud Exercitation</h2>
+                        <h2 class="layout-title">Eausmod Tempor Magna Nostrud Exercitation</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco
                             laboris nisi aliquip commodo consequat. duis aute.</p>
@@ -255,7 +258,9 @@
                         <i class="fa-solid fa-play mklbItem"
                             data-video-src="https://www.jqueryscript.net/dummy/1.mp4"></i>
                     </a>
-                    <div class="pulsate-css position-absolute"></div>
+                    <div class="pulsate-css1 position-absolute"></div>
+                    <div class="pulsate-css2 position-absolute"></div>
+                    <div class="pulsate-css3 position-absolute"></div>
                 </div>
                 <hr>
                 <div class="download__logo d-flex justify-content-between">
@@ -275,10 +280,45 @@
                     <img src="./img/testimonial-img.png" alt="testimonial">
                 </div>
                 <div class="col-6">
-                    <p>Testimonials</p>
-                    <h2>What Our Clients Says?</h2>
+                    <p class="subtitle">Testimonials</p>
+                    <h2 class="layout-title">What Our Clients Says?</h2>
+                    <div class="owl-carousel1">
+                        <div class="testimonial-slider">
+                            <img src="./img/quotation.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorum magni? Rem
+                                nobis officiis quae dolore impedit possimus nostrum. Id voluptates enim veritatis odio
+                                inventore eum quos harum aspernatur pariatur.</p>
+                            <p>Liam Huges</p>
+                            <p>Happy Client</p>
+                        </div>
+                        <div class="testimonial-slider">
+                            <img src="./img/quotation.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus eveniet nobis quidem
+                                quasi vero ut laborum ea itaque dolorem!</p>
+                            <p>Liam Huges</p>
+                            <p>Happy Client</p>
+                        </div>
+                        <div class="testimonial-slider">
+                            <img src="./img/quotation.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus eveniet nobis quidem
+                                quasi vero ut laborum ea itaque dolorem!</p>
+                            <p>Liam Huges</p>
+                            <p>Happy Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog section">
+        <div class="container">
+            <p>Latest News</p>
+            <h2 class="layout-title">Learn Form Agico</h2>
+            <div class="blog-carousel">
+                <div class="blog-card">
 
                 </div>
+
             </div>
         </div>
     </section>
@@ -301,6 +341,73 @@
     <script src="./js/main.js"></script>
     <!-- POPUP VIDEO -->
     <script src="./js/mklb.js"></script>
+    <!-- CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel1").owlCarousel({
+                loop: true,
+                responsiveClass: true,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1,
+
+                    },
+                    600: {
+                        items: 1,
+
+                    },
+                    1000: {
+                        items: 1,
+
+                    }
+                }
+            });
+        });
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                600: {
+                    items: 1,
+
+                },
+                1000: {
+                    items: 1,
+
+                }
+            }
+        })
+
+    </script>
+    <script>
+        $('.blog-carousel').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                600: {
+                    items: 3,
+
+                },
+                1000: {
+                    items: 3,
+
+                }
+            }
+        })
+
+    </script>
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/e15516c5b2.js" crossorigin="anonymous"></script>
     <!--BS -->

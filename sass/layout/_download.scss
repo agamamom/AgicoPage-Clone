@@ -21,8 +21,6 @@
             border-radius: 50%;
             color: $main-color;
             font-size: 2rem;
-            margin-top: 90px;
-            margin-bottom: 70px;
         }
         hr {
             color: #b99dec;
@@ -34,28 +32,67 @@
             }
         }
         .pulse-box {
-            .pulsate-css {
+            height: 270px;
+            a {
+                position: absolute;
+                top: 56%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+            }
+            .pulsate-css1 {
                 background-color: #fff;
                 border-radius: 50%;
-                height: 90px;
-                width: 90px;
-                position: relative;
+                height: 50px;
+                width: 50px;
                 display: inline-block;
-                text-align: center;
-                animation: pulse-around 1s linear infinite;
+                animation: pulse-around 3.2s linear infinite;
+                top: 47%;
+                left: 47.6%;
+                transform: translate(-50%, -50%);
             }
+            .pulsate-css2 {
+                background-color: #fff;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                display: inline-block;
+                animation: pulse-around 3.2s linear infinite;
+                animation-delay: 1s;
+                top: 47%;
+                left: 47.6%;
+                transform: translate(-50%, -50%);
+            }
+            .pulsate-css3 {
+                background-color: #fff;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                display: inline-block;
+                animation: pulse-around 3.2s linear infinite;
+                animation-delay: 2s;
+                top: 47%;
+                left: 47.6%;
+                transform: translate(-50%, -50%);
+            }
+
             @keyframes pulse-around {
                 0% {
-                    opacity: 0.6;
-                    transform: scale(1);
+                    opacity: 0.3;
+                    transform: scale(0.8);
+                }
+                25% {
+                    opacity: 0.2;
                 }
                 50% {
-                    opacity: 0.5;
-                    transform: scale(1.2);
+                    opacity: 0.1;
+                }
+                75% {
+                    opacity: 0.05;
                 }
                 100% {
                     opacity: 0;
-                    transform: scale(1.4);
+                    transform: scale(5.4);
                 }
             }
         }

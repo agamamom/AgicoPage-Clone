@@ -48,6 +48,14 @@ ul {
   padding-top: 140px;
 }
 
+.layout-title {
+  font-size: 4rem;
+  color: #242f3e;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 .header {
   padding: 45px 0;
   position: fixed;
@@ -527,8 +535,6 @@ ul {
   border-radius: 50%;
   color: #00e0d8;
   font-size: 2rem;
-  margin-top: 90px;
-  margin-bottom: 70px;
 }
 
 .download .download__content hr {
@@ -541,51 +547,106 @@ ul {
      object-fit: contain;
 }
 
-.download .download__content .pulse-box .pulsate-css {
+.download .download__content .pulse-box {
+  height: 270px;
+}
+
+.download .download__content .pulse-box a {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.download .download__content .pulse-box .pulsate-css1 {
   background-color: #fff;
   border-radius: 50%;
-  height: 90px;
-  width: 90px;
-  position: relative;
+  height: 50px;
+  width: 50px;
   display: inline-block;
-  text-align: center;
-  -webkit-animation: pulse-around 1s linear infinite;
-          animation: pulse-around 1s linear infinite;
+  -webkit-animation: pulse-around 3.2s linear infinite;
+          animation: pulse-around 3.2s linear infinite;
+  top: 47%;
+  left: 47.6%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.download .download__content .pulse-box .pulsate-css2 {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  -webkit-animation: pulse-around 3.2s linear infinite;
+          animation: pulse-around 3.2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  top: 47%;
+  left: 47.6%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.download .download__content .pulse-box .pulsate-css3 {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  -webkit-animation: pulse-around 3.2s linear infinite;
+          animation: pulse-around 3.2s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  top: 47%;
+  left: 47.6%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @-webkit-keyframes pulse-around {
   0% {
-    opacity: 0.6;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 0.3;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  25% {
+    opacity: 0.2;
   }
   50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.05;
   }
   100% {
     opacity: 0;
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(5.4);
+            transform: scale(5.4);
   }
 }
 
 @keyframes pulse-around {
   0% {
-    opacity: 0.6;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 0.3;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  25% {
+    opacity: 0.2;
   }
   50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.05;
   }
   100% {
     opacity: 0;
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(5.4);
+            transform: scale(5.4);
   }
 }
 
@@ -626,14 +687,59 @@ ul {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 14%;
   left: 0;
   bottom: 0;
   background: url("../../img/map.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
+  background-size: inherit;
+  height: 86%;
   width: 42%;
+  z-index: -1;
+}
+
+.testimonial .row .col-6 .subtitle {
+  font-size: 18px;
+  color: #8b8e93;
+  font-weight: 400;
+}
+
+.testimonial .row .col-6 h2 {
+  font-size: 4rem;
+  color: #242f3e;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.testimonial .row .col-6 .owl-carousel .testimonial-slider img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 40px;
+}
+
+.testimonial .row .col-6 .owl-carousel .testimonial-slider p:nth-of-type(1) {
+  font-weight: 400;
+  color: #8b8e93;
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial .row .col-6 .owl-carousel .testimonial-slider p:nth-of-type(2) {
+  color: #242f3e;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.8rem;
+}
+
+.testimonial .row .col-6 .owl-carousel .testimonial-slider p:nth-of-type(3) {
+  font-size: 1.6rem;
+  color: #8b8e93;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .button-primary {
