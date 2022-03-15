@@ -282,7 +282,7 @@
                 <div class="col-6">
                     <p class="subtitle">Testimonials</p>
                     <h2 class="layout-title">What Our Clients Says?</h2>
-                    <div class="owl-carousel1">
+                    <div class="owl-carousel testtimonial-carousel">
                         <div class="testimonial-slider">
                             <img src="./img/quotation.png" alt="">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorum magni? Rem
@@ -314,11 +314,129 @@
         <div class="container">
             <p>Latest News</p>
             <h2 class="layout-title">Learn Form Agico</h2>
-            <div class="blog-carousel">
-                <div class="blog-card">
+            <div class="owl-carousel blog-carousel">
+                <div class="card-blog">
+                    <div class="card-header">
+                        <img src="./img/blog-post-1.jpg" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <p>Mar 13, 2022</p>
+                        </div>
+                        <div class="card-content">
 
+                            <p>
+                                Cupidat non proident sunt officia deserunt mollit
+                                anim.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="card-blog">
+                    <div class="card-header">
+                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Design</span>
+                        <h4>
+                            10 Rules of Dashboard Design
+                        </h4>
+                        <p>
+                            Dashboard Design Guidelines
+                        </p>
+                        <div class="user">
+                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                            <div class="user-info">
+                                <h5>Carrie Brewer</h5>
+                                <small>1w ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="card-header">
+                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Design</span>
+                        <h4>
+                            10 Rules of Dashboard Design
+                        </h4>
+                        <p>
+                            Dashboard Design Guidelines
+                        </p>
+                        <div class="user">
+                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                            <div class="user-info">
+                                <h5>Carrie Brewer</h5>
+                                <small>1w ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="card-header">
+                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Design</span>
+                        <h4>
+                            10 Rules of Dashboard Design
+                        </h4>
+                        <p>
+                            Dashboard Design Guidelines
+                        </p>
+                        <div class="user">
+                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                            <div class="user-info">
+                                <h5>Carrie Brewer</h5>
+                                <small>1w ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="card-header">
+                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Design</span>
+                        <h4>
+                            10 Rules of Dashboard Design
+                        </h4>
+                        <p>
+                            Dashboard Design Guidelines
+                        </p>
+                        <div class="user">
+                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                            <div class="user-info">
+                                <h5>Carrie Brewer</h5>
+                                <small>1w ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="card-header">
+                        <img src="https://images6.alphacoders.com/312/thumb-1920-312773.jpg" alt="city" />
+                    </div>
+                    <div class="card-body">
+                        <span class="tag tag-pink">Design</span>
+                        <h4>
+                            10 Rules of Dashboard Design
+                        </h4>
+                        <p>
+                            Dashboard Design Guidelines
+                        </p>
+                        <div class="user">
+                            <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+                            <div class="user-info">
+                                <h5>Carrie Brewer</h5>
+                                <small>1w ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -344,28 +462,7 @@
     <!-- CAROUSEL -->
     <script src="./js/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel1").owlCarousel({
-                loop: true,
-                responsiveClass: true,
-                nav: false,
-                responsive: {
-                    0: {
-                        items: 1,
-
-                    },
-                    600: {
-                        items: 1,
-
-                    },
-                    1000: {
-                        items: 1,
-
-                    }
-                }
-            });
-        });
-        $('.owl-carousel').owlCarousel({
+        $('.testtimonial-carousel').owlCarousel({
             loop: true,
             responsiveClass: true,
             nav: false,
@@ -391,6 +488,7 @@
             loop: true,
             responsiveClass: true,
             nav: false,
+            margin: 1,
             responsive: {
                 0: {
                     items: 1,

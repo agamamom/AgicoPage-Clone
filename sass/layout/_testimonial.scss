@@ -1,6 +1,7 @@
 .testimonial {
     position: relative;
     padding-bottom: 140px;
+    background-color: #f8f9fa;
     &::before {
         content: "";
         display: block;
@@ -13,10 +14,11 @@
         background-size: inherit;
         height: 86%;
         width: 42%;
-        z-index: -1;
+        z-index: 1;
     }
     .row {
         .col-6 {
+            z-index: 2;
             .subtitle {
                 font-size: 18px;
                 color: $p-color;
