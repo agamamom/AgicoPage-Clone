@@ -1,12 +1,17 @@
 .blog {
     padding-bottom: 140px;
-    .blog-carousel {
-        .owl-stage-outer {
-            padding-bottom: 32px;
-            padding-left: 20px;
-        }
-        .card-blog {
-            box-shadow: 0 15px 15px 0 rgba(8, 18, 109, 0.096);
-        }
+    .blog__subtitle{
+        text-transform: capitalize;
+        font-size: 18px;
+        color: #8b8e93;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }
+    .layout-title{
+        margin-bottom: 38px;
     }
 }
+.swiper {
+    width: 600px;
+    height: 300px;
+  }

@@ -14,3 +14,11 @@
 //         document.querySelector('.header').classList.remove('active');
 //     }
 // };
+
+
+// var btnPrev = document.querySelector(".owl-prev");
+// btnPrev.innerHTML = "<i></i>";
+// var iconBtn = document.querySelector(".owl-prev i")
+// iconBtn.classList.add('fas', 'fa-long-arrow-alt-right');
+// iconBtn.ariaHidden = "false";
+// console.log(iconBtn);
