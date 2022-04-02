@@ -10,8 +10,48 @@
     .layout-title{
         margin-bottom: 38px;
     }
+    .swiper-blog{
+        margin-left: 20px;
+        overflow: hidden;
+        padding-bottom: 42px;
+        padding-left: 13px;
+        .swiper-button-prev{
+            top: 12%;
+            right: 3%;
+            left: auto;
+            i{
+                color: rgba(0, 0, 0, 0.4);
+                transition: all .3s;
+                transform: scale(1);
+                font-size: 18px;
+                &:hover{
+                    color: $main-color;
+                    
+                    transform: scale(1.2);
+                }
+            }
+            &::after{
+                display: none;
+            }
+        }
+        .swiper-button-next{
+            top: 12%;
+            right: 0;
+            i{
+                color: rgba(0, 0, 0, 0.4);
+                transition: all .3s;
+                transform: scale(1);
+                font-size: 18px;
+                &:hover{
+                    color: $main-color;
+                    
+                    transform: scale(1.2);
+                }
+            }
+            &::after{
+                display: none;
+            }
+        }
+    }
 }
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
+

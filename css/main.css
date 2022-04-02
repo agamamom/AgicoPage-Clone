@@ -763,9 +763,60 @@ ul {
   margin-bottom: 38px;
 }
 
-.swiper {
-  width: 600px;
-  height: 300px;
+.blog .swiper-blog {
+  margin-left: 20px;
+  overflow: hidden;
+  padding-bottom: 42px;
+  padding-left: 13px;
+}
+
+.blog .swiper-blog .swiper-button-prev {
+  top: 12%;
+  right: 3%;
+  left: auto;
+}
+
+.blog .swiper-blog .swiper-button-prev i {
+  color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 18px;
+}
+
+.blog .swiper-blog .swiper-button-prev i:hover {
+  color: #00e0d8;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blog .swiper-blog .swiper-button-prev::after {
+  display: none;
+}
+
+.blog .swiper-blog .swiper-button-next {
+  top: 12%;
+  right: 0;
+}
+
+.blog .swiper-blog .swiper-button-next i {
+  color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 18px;
+}
+
+.blog .swiper-blog .swiper-button-next i:hover {
+  color: #00e0d8;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blog .swiper-blog .swiper-button-next::after {
+  display: none;
 }
 
 .button-primary {
@@ -833,6 +884,8 @@ ul {
 .card-blog {
   background-color: #fff;
   border-radius: 4px 4px 10px 10px;
+  -webkit-box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.107);
+          box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.107);
   width: 338px;
   overflow: hidden;
   margin-right: 0;

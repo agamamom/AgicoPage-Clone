@@ -312,8 +312,8 @@
             </div>
         </div>
     </section>
-    <section class="blog section">
-        <div class="container">
+    <section class="blog section position-relative">
+        <div class="container position-relative">
             <p class="blog__subtitle">Latest News</p>
             <h2 class="layout-title">Learn Form Agico</h2>
             <div class="swiper-blog">
@@ -419,7 +419,22 @@
                 </div>
                 <div class="swiper-button-next"><i class="fas fa-arrow-right"></i></div>
             </div>
+            <div class="blog__subscription position-absolute d-flex justify-content-center">
+                <div class="blog__subscription--content d-flex text-center">
+                    <h3>Subscribe
+                        To Our Newsletter
+                    </h3>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <a href="#" class="btn button-primary">Subscribe Now</a>
+                    </form>
+                </div>
+
+            </div>
         </div>
+    </section>
+    <section class="subcription">
+
     </section>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -472,8 +487,8 @@
     <script>
         var swiper = new Swiper(".swiper-blog", {
             slidesPerView: 1,
-            spaceBetween: 10,
             // Responsive breakpoints
+            loop: true,
             breakpoints: {
                 // when window width is >= 320px
                 320: {
@@ -488,16 +503,12 @@
                 // when window width is >= 640px
                 640: {
                     slidesPerView: 3,
-                    spaceBetween: 50
+                    spaceBetween: 10,
                 }
             },
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
             },
             navigation: {
                 nextEl: ".swiper-button-next",
