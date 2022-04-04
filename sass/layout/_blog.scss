@@ -1,5 +1,5 @@
 .blog {
-    padding-bottom: 140px;
+    padding-bottom: 228px;
     .blog__subtitle{
         text-transform: capitalize;
         font-size: 18px;
@@ -50,6 +50,47 @@
             }
             &::after{
                 display: none;
+            }
+        }
+    }
+    .blog__subscription{
+        width: 100%;
+        top: 124%;
+        padding: 62px 46px;    
+        background: #fff; 
+        height: 200px;
+        box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.1);
+        border-radius: 0 0 0 40px;
+        .blog__subscription--content{
+            width: 100%;
+            h3{
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #242f3e;
+            }
+            .form-control{
+                border: 1px solid #ebebeb;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 45px;
+                padding: 0 25px;
+                width: 58%;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                margin: 10px 22px 10px 10px;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            .btn{
+                margin: 10px;
+                width: 42%;
+                color: #ebebeb;
+                height: 60px;
             }
         }
     }
