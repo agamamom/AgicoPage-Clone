@@ -1,7 +1,6 @@
-footer{
-    background: #15192b;
-    padding-top: 80px;
-    .footer-top{
+   .footer-top{
+        background: #15192b;
+        padding-top: 80px;
         .row{
             gap: 0 47px;
         }
@@ -84,8 +83,17 @@ footer{
         }
     }
     .footer-bottom{
+        background: #15192b;
         color: #d4dae3;
-        border-top: 1px solid #d4dae3;
+        flex-direction: column;
+        .borderBottom{
+            background: #d4dae3;
+            color: #d4dae3;
+            width: 100%;
+        }
+        .container{
+            padding: 20px 0;
+        }
         a{
             text-transform: lowercase;
             color: #007ac7;
@@ -118,4 +126,3 @@ footer{
             }
         }
     }
-}

@@ -63,6 +63,24 @@ ul {
   left: 0;
   right: 0;
   z-index: 10;
+  background: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header.active {
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 142, 236, 0.104);
+          box-shadow: 0px 10px 20px 0px rgba(0, 142, 236, 0.104);
+  padding: 15px 0;
+}
+
+.header.active .navbar .button-outline-primary {
+  color: #007ac7;
+}
+
+.header.active .navbar .button-outline-primary:hover {
+  color: #fff;
 }
 
 .header .navbar .navbar-brand {
@@ -868,21 +886,18 @@ ul {
   height: 60px;
 }
 
-footer {
+.footer-top {
   background: #15192b;
   padding-top: 80px;
-}
-
-footer .footer-top {
   padding-top: 140px;
   padding-bottom: 140px;
 }
 
-footer .footer-top .row {
+.footer-top .row {
   gap: 0 47px;
 }
 
-footer .footer-top p {
+.footer-top p {
   color: #d4dae3;
   margin-bottom: 1.5rem;
   font-weight: 400;
@@ -891,7 +906,7 @@ footer .footer-top p {
   text-transform: initial;
 }
 
-footer .footer-top .footer-media i {
+.footer-top .footer-media i {
   color: #fff;
   height: 46px;
   width: 46px;
@@ -904,16 +919,16 @@ footer .footer-top .footer-media i {
   transition: all .3s;
 }
 
-footer .footer-top .footer-media i:hover {
+.footer-top .footer-media i:hover {
   background-color: #007ac7;
   border: 2px solid #007ac7;
 }
 
-footer .footer-top .footer-media i + i {
+.footer-top .footer-media i + i {
   margin-right: 8px;
 }
 
-footer .footer-top .footer-title {
+.footer-top .footer-title {
   margin-bottom: 1.5rem;
   color: #fff;
   font-size: 22px;
@@ -921,11 +936,11 @@ footer .footer-top .footer-title {
   line-height: 1.2;
 }
 
-footer .footer-top .footer-linkPages ul li {
+.footer-top .footer-linkPages ul li {
   padding-bottom: 16px;
 }
 
-footer .footer-top .footer-linkPages ul li i {
+.footer-top .footer-linkPages ul li i {
   padding-right: 14px;
   color: #d4dae3;
   font-size: 10px;
@@ -933,39 +948,53 @@ footer .footer-top .footer-linkPages ul li i {
   transition: all .3s;
 }
 
-footer .footer-top .footer-linkPages ul li a {
+.footer-top .footer-linkPages ul li a {
   text-decoration: none;
   color: #d4dae3;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-footer .footer-top .footer-linkPages ul li:hover i {
+.footer-top .footer-linkPages ul li:hover i {
   color: #007ac7;
 }
 
-footer .footer-top .footer-linkPages ul li:hover a {
+.footer-top .footer-linkPages ul li:hover a {
   color: #007ac7;
   text-decoration: underline;
 }
 
-footer .footer-top .footer-address ul li a {
+.footer-top .footer-address ul li a {
   color: #d4dae3;
   text-decoration: none;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-footer .footer-top .footer-address ul li a:hover {
+.footer-top .footer-address ul li a:hover {
   color: #007ac7;
 }
 
-footer .footer-bottom {
+.footer-bottom {
+  background: #15192b;
   color: #d4dae3;
-  border-top: 1px solid #d4dae3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer .footer-bottom a {
+.footer-bottom .borderBottom {
+  background: #d4dae3;
+  color: #d4dae3;
+  width: 100%;
+}
+
+.footer-bottom .container {
+  padding: 20px 0;
+}
+
+.footer-bottom a {
   text-transform: lowercase;
   color: #007ac7;
   text-decoration: none;
@@ -973,21 +1002,21 @@ footer .footer-bottom a {
   transition: all .3s;
 }
 
-footer .footer-bottom a:hover {
+.footer-bottom a:hover {
   color: #007bc796;
 }
 
-footer .footer-bottom ul li a {
+.footer-bottom ul li a {
   color: #d4dae3;
   text-transform: inherit;
   padding-right: 20px;
 }
 
-footer .footer-bottom ul .border--right {
+.footer-bottom ul .border--right {
   position: relative;
 }
 
-footer .footer-bottom ul .border--right::after {
+.footer-bottom ul .border--right::after {
   content: "";
   display: block;
   position: absolute;

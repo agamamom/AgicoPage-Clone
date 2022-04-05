@@ -5,6 +5,22 @@
     left: 0;
     right: 0;
     z-index: 10;
+    background: transparent;
+    transition: all .3s;
+    &.active{
+        background: #fff;
+        box-shadow: 0px 10px 20px 0px rgba(0, 142, 236, 0.104);
+        padding: 15px 0;
+        .navbar{
+            .button-outline-primary{
+                color: #007ac7;
+                &:hover{
+                    color: #fff;
+                }
+            }
+
+        }
+    }
     .navbar {
         .navbar-brand {
             margin-right: 12rem;
