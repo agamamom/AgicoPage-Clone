@@ -2,3 +2,49 @@
     color: $f-c;
     background-color: $bg-c;
 }
+
+
+$XS: 0px;
+$SM: 575.98px;
+$MD: 767.98px;
+$LG: 991.98px;
+$XL: 1119.98px;
+$XXL: 1399.98px;
+// media queries
+
+@mixin Responsive($canvas) {
+    @if $canvas == XS {
+        @media only screen and (min-width: $XS) and (max-width: 413px){
+            @content;
+        }
+    } @else if $canvas == SM {
+        @media only screen and (min-width: $SM) {
+            @content;
+        }
+    } @else if $canvas == MD {
+        @media only screen and (min-width: $MD) {
+            @content;
+        }
+    } @else if $canvas == XL {
+        @media only screen and (min-width: $XL) {
+            @content;
+        }
+    } @else if $canvas == XXL {
+        @media only screen and (min-width: $XXL) {
+            @content;
+        }
+    } @else if $canvas == IP8 {
+        @media only screen and (min-width: 414px) and (max-width: 736px) {
+            @content;
+        }
+    } @else if $canvas == IPAD {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $canvas == BIGSCREEN {
+        @media only screen and (min-width: 1024px) {
+            @content;
+        }
+    }
+}
