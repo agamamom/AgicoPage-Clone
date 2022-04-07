@@ -167,6 +167,7 @@ ul {
   .header {
     background: #fff;
     width: 100vw;
+    padding: 8px 0;
   }
   .header .container {
     width: 100%;
@@ -177,6 +178,9 @@ ul {
   }
   .header .container .navbar .navbar-toggler .navbar-toggler-icon {
     color: #007ac7;
+  }
+  .header .container .navbar .navbar-toggler .navbar-toggler-icon i {
+    font-size: 22px;
   }
   .header .container .navbar .navbar-collapse .navbar-nav {
     text-align: center;
@@ -1189,5 +1193,28 @@ ul {
 
 .card-blog .card-body .card-content:hover {
   color: #007ac7;
+}
+
+.preloader-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0E1E2F;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preloader-bg img {
+  max-width: 500px;
 }
 /*# sourceMappingURL=main.css.map */

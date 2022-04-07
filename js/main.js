@@ -39,3 +39,8 @@ window.onload = () => {
         document.querySelector('.header').classList.remove('active');
     }
 };
+
+// Preloader js    
+setTimeout(function () {
+    $('.preloader-bg').fadeToggle();
+}, 1500);

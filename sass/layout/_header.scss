@@ -87,6 +87,7 @@
     .header{
         background: #fff;
         width: 100vw;
+        padding: 8px 0;
         .container{
             width: 100%;
             .navbar{
@@ -95,6 +96,9 @@
                     border-color: rgba(0,0,0,.1);
                     .navbar-toggler-icon{
                         color: #007ac7;
+                        i{
+                            font-size: 22px;
+                        }
                     }
                 }
                 .navbar-collapse{
