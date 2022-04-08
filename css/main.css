@@ -1,3 +1,8 @@
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -249,6 +254,10 @@ ul {
 .banner .row .banner-right {
   -webkit-box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.103);
           box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.103);
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .banner .background-img {
@@ -287,6 +296,10 @@ ul {
   -webkit-box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.11);
           box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.11);
   border-radius: 10px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .feature .row .col-3 .feature__item .fa-desktop {
