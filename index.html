@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- ANIMATION ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- BS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- POPUP VIDEO -->
@@ -127,28 +129,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <div class="feature__item animate__fadeInLeft">
+                    <div class="feature__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50"
+                        data-aos-offset="200">
                         <i class="fa-solid fa-desktop"></i>
                         <h4>Exclusive Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur elit sed do</p>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="feature__item">
+                    <div class="feature__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+                        data-aos-offset="200">
                         <i class="fas fa-cogs"></i>
                         <h4>Easy Customize</h4>
                         <p>Lorem ipsum dolor sit amet consectetur elit sed do</p>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="feature__item">
+                    <div class="feature__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150"
+                        data-aos-offset="200">
                         <i class="fa-solid fa-shield"></i>
                         <h4>Extreme Security</h4>
                         <p>Lorem ipsum dolor sit amet consectetur elit sed do</p>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="feature__item">
+                    <div class="feature__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"
+                        data-aos-offset="200">
                         <i class="far fa-clock"></i>
                         <h4>24 Hour Service</h4>
                         <p>Lorem ipsum dolor sit amet consectetur elit sed do</p>
@@ -579,6 +585,11 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+    <!-- ANIMATION ON SCROOL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
