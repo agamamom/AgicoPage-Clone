@@ -8,10 +8,13 @@
         top: -62%;
         z-index: -2;
     }
+    .col-lg-3{
+        width: 24%;
+    }
     .row {
         gap: 13px;
-        .col-3 {
-            width: 24%;
+        .col-12 {
+            width: 100%;
             .feature__item {
                 background-color: white;
                 padding: 20px;
@@ -104,5 +107,6 @@
                 }
             }
         }
+        
     }
 }

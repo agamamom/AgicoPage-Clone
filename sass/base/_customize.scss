@@ -12,3 +12,13 @@
     font-weight: 500;
     line-height: 1.2;
 }
+
+@include Responsive(IP8){
+	.container{
+		width: 98%;
+	}
+}
+
+.mt-40{
+    margin-top: 40px;
+}

@@ -57,3 +57,45 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(IP8){
+    .banner{
+        padding: 150px 0;
+        .row{
+            margin-right: -15px;
+            .banner-left{
+                text-align: center;
+                h1{
+                    line-height: 50px;
+                    font-size: 38px;
+                    text-align: center;
+                }
+                span{
+                    font-size: 120px;
+                    top: 8%;
+                    left: 4%;
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+                .banner-button{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   .btn{
+                       padding: 10px 45px;
+                       width: max-content;
+                       margin-bottom: 14px;
+                   } 
+                }
+            }
+        }
+        .background-img{
+            right: -75%;
+            img{
+                max-width: 66%;
+            }
+        }
+
+    }
+}

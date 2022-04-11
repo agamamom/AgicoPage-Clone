@@ -1,9 +1,10 @@
-// base
-@import "./base/reset";
-@import "./base/customize";
 // helper
 @import "./helper/mixin";
 @import "./helper/variable";
+// base
+@import "./base/reset";
+@import "./base/customize";
+
 //layout
 @import "./layout/header";
 @import "./layout/banner";
