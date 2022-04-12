@@ -5,6 +5,11 @@
 .section {
     padding-top: 140px;
 }
+@include Responsive(IP8){
+    .section{
+        padding: 100px 0;
+    }
+}
 .layout-title {
     font-size: 4rem;
     color: #242f3e;

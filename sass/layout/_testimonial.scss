@@ -62,3 +62,52 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(IP8){
+    .testimonial{
+        &::before{
+            top: 8%;
+            background-size: contain;
+            width: 88%;
+        }
+        .subtitle{
+            font-size: 1.8rem;
+            color: #8b8e93;
+            font-weight: 400;
+        }
+        .layout-title{
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+        .testtimonial-carousel{
+            .owl-item{
+                .testimonial-slider{
+                    img{
+                        width: 8%;
+                        margin-bottom: 4rem;
+                    }
+                    p{
+                        font-weight: 400;
+                        color: #8b8e93;
+                        font-size: 14px;
+                        font-style: italic;
+                        margin-bottom: 2rem;
+                    }
+                    .testimonial-actor{
+                        color: #242f3e;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-style: normal;
+                        margin-bottom: 0;
+                    }
+                    .actor-status{
+                        color: #8b8e93;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+}
