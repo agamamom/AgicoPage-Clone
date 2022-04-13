@@ -15,9 +15,10 @@
         overflow: hidden;
         padding-bottom: 42px;
         padding-left: 13px;
+        padding-right: 13px;
         .swiper-button-prev{
             top: 12%;
-            right: 3%;
+            right: 8%;
             left: auto;
             i{
                 color: rgba(0, 0, 0, 0.4);
@@ -61,6 +62,7 @@
         height: 200px;
         box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.1);
         border-radius: 0 0 0 40px;
+        position: absolute;
         .blog__subscription--content{
             width: 100%;
             h3{
@@ -91,6 +93,44 @@
                 width: 42%;
                 color: #ebebeb;
                 height: 60px;
+            }
+        }
+    }
+}
+// RESPONSIVE
+@include Responsive(IP8){
+    .blog{
+        padding-bottom: 0px;
+        .layout-title{
+            font-size: 3rem;
+        }
+        .blog__subscription{
+            background: transparent;
+            height: auto;
+            box-shadow: none;
+            position: relative;
+            padding-top: 100px;
+            .blog__subscription--content{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    text-align: center;
+                }
+                form{
+                    margin-top: 20px;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 15px;
+                    .form-control{
+                        margin: 0;
+                        width: 100%;
+                    }
+                    .btn{
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
             }
         }
     }

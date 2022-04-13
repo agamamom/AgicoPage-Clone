@@ -86,6 +86,9 @@
         background: #15192b;
         color: #d4dae3;
         flex-direction: column;
+        .footer-bottom__content{
+            justify-content: space-between;
+        }
         .borderBottom{
             background: #d4dae3;
             color: #d4dae3;
@@ -119,10 +122,26 @@
                     display: block;
                     position: absolute;
                     width: 1px;
-                    height: 10px;
-                    top: 0;
-                    right: -10%;
+                    height: 15px;
+                    top: 3px;
+                    right: 6%;
+                    background-color: #d4dae3;
                 }
             }
         }
     }
+// RESPONSIVE
+@include Responsive(IP8){
+        .footer-top{
+            .row{
+                gap: 30px;
+            }
+        }
+    .footer-bottom{
+        .footer-bottom__content{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

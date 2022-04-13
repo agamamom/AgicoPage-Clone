@@ -51,3 +51,9 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(IP8){
+    .card-blog {
+        width: inherit;
+    }
+}

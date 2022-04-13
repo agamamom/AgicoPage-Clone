@@ -1001,11 +1001,12 @@ ul {
   overflow: hidden;
   padding-bottom: 42px;
   padding-left: 13px;
+  padding-right: 13px;
 }
 
 .blog .swiper-blog .swiper-button-prev {
   top: 12%;
-  right: 3%;
+  right: 8%;
   left: auto;
 }
 
@@ -1061,6 +1062,7 @@ ul {
   -webkit-box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.1);
           box-shadow: 0px 15px 15px 0px rgba(8, 18, 109, 0.1);
   border-radius: 0 0 0 40px;
+  position: absolute;
 }
 
 .blog .blog__subscription .blog__subscription--content {
@@ -1099,6 +1101,55 @@ ul {
   width: 42%;
   color: #ebebeb;
   height: 60px;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  .blog {
+    padding-bottom: 0px;
+  }
+  .blog .layout-title {
+    font-size: 3rem;
+  }
+  .blog .blog__subscription {
+    background: transparent;
+    height: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: relative;
+    padding-top: 100px;
+  }
+  .blog .blog__subscription .blog__subscription--content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog .blog__subscription .blog__subscription--content h3 {
+    text-align: center;
+  }
+  .blog .blog__subscription .blog__subscription--content form {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .blog .blog__subscription .blog__subscription--content form .form-control {
+    margin: 0;
+    width: 100%;
+  }
+  .blog .blog__subscription .blog__subscription--content form .btn {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .footer-top {
@@ -1199,6 +1250,12 @@ ul {
           flex-direction: column;
 }
 
+.footer-bottom .footer-bottom__content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .footer-bottom .borderBottom {
   background: #d4dae3;
   color: #d4dae3;
@@ -1236,9 +1293,28 @@ ul {
   display: block;
   position: absolute;
   width: 1px;
-  height: 10px;
-  top: 0;
-  right: -10%;
+  height: 15px;
+  top: 3px;
+  right: 6%;
+  background-color: #d4dae3;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  .footer-top .row {
+    gap: 30px;
+  }
+  .footer-bottom .footer-bottom__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .button-primary {
@@ -1374,6 +1450,12 @@ ul {
 
 .card-blog .card-body .card-content:hover {
   color: #007ac7;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  .card-blog {
+    width: inherit;
+  }
 }
 
 .preloader-bg {
