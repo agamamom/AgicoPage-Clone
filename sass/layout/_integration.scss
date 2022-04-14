@@ -5,6 +5,7 @@
         }
     }
     .integration-right {
+        padding-left: 3rem;
         & p:nth-of-type(1) {
             color: $p-color;
             font-size: 1.8rem;
@@ -56,8 +57,8 @@
     }
 }
 .integrationTwo {
+    padding-bottom: 140px;
     .integrationTwo-left {
-        
         padding-right: 60px;
         & p:nth-of-type(1) {
             color: $p-color;
@@ -120,4 +121,27 @@
             width: 90%;
         }
     }
+}
+// RESPONSIVE
+@include Responsive(IP8){
+  .integrationOne{
+    .integration-right {
+        padding: 0;
+        .layout-title{
+            font-size: 3rem;
+        }
+        & p:nth-of-type(2){
+            font-size: 14px;
+        }
+    }
+  }  
+  .integrationTwo{
+      padding: 0 0 100px 0;
+      .integrationTwo-left{
+          padding-right: 0;
+          h2{
+            font-size: 3rem;
+          }
+      }
+  }
 }
