@@ -35,3 +35,8 @@
         }
     }
 }
+@include Responsive(IPAD){
+    .counter{
+        text-align: center;
+    }
+}

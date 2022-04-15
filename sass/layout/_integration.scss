@@ -58,6 +58,7 @@
 }
 .integrationTwo {
     padding-bottom: 140px;
+    overflow: hidden;
     .integrationTwo-left {
         padding-right: 60px;
         & p:nth-of-type(1) {
@@ -117,6 +118,7 @@
         }
     }
     .integrationTwo-right {
+        padding-left: 3rem;
         img {
             width: 90%;
         }
@@ -142,6 +144,9 @@
           h2{
             font-size: 3rem;
           }
+      }
+      .integrationTwo-right{
+          padding-left: 0;
       }
   }
 }

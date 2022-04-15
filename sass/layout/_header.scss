@@ -89,6 +89,51 @@
         width: 100vw;
         padding: 8px 0;
         .container{
+            .navbar{
+                .navbar-toggler{
+                    color: rgba(0,0,0,.5);
+                    border-color: rgba(0,0,0,.1);
+                    padding: 0.75rem 1.75rem;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    .navbar-toggler-icon{
+                        color: #616365;
+                        i{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    .navbar-nav{
+                        text-align: center;
+                        .btn{
+                            padding: 10px 45px;
+                            width: 50%;
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            color: #007ac7;
+                            margin-left: 0;
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                        .nav-link{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include Responsive(IPAD){
+    .header{
+        background: #fff;
+        width: 100vw;
+        padding: 8px 0;
+        .container{
             width: 100%;
             .navbar{
                 .navbar-toggler{
@@ -111,8 +156,11 @@
                         .btn{
                             padding: 10px 45px;
                             width: 50%;
-                            margin-left: 118px;
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
                             color: #007ac7;
+                            margin-left: 0;
                             &:hover{
                                 color: #fff;
                             }

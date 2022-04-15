@@ -23,7 +23,12 @@
 		width: 98%;
 	}
 }
-
+@include Responsive(IPAD){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
 .mt-40{
     margin-top: 40px;
 }

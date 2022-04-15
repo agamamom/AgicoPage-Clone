@@ -113,10 +113,24 @@
 // RESPONSIVE
 @include Responsive(IP8){
     .feature{
+        & img:nth-of-type(2){
+            top: -30%;
+        }
         .row{
             .col-12{
                 width: 100%;
             }
+        }
+    }
+}
+@include Responsive(IPAD){
+    .feature{
+        .row{
+            gap: 14px;
+            .col-md-6{
+                width: 49%;
+            }
+            
         }
     }
 }
