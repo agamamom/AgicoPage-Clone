@@ -145,3 +145,16 @@
         }
     }
 }
+@include Responsive(IPAD){
+    .footer-top{
+        .row{
+            gap: 15px;
+        }
+    }
+    .footer-bottom{
+        .footer-bottom__content{
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

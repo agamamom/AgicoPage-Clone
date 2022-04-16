@@ -38,5 +38,12 @@
 @include Responsive(IPAD){
     .counter{
         text-align: center;
+        .counter__wrapper{
+            .counter__item{
+                & p:nth-of-type(2){
+                    height: 24px;
+                }
+            }
+        }
     }
 }
