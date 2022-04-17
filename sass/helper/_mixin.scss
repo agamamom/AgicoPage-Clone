@@ -43,7 +43,7 @@ $XXL: 1399.98px;
         }
     }
     @else if $canvas == BIGSCREEN {
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 1025px) {
             @content;
         }
     }

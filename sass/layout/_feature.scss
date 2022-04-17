@@ -11,7 +11,7 @@
 
     .row {
         gap: 13px;
-        .col-lg-3{
+        .col-xl-3{
             width: 24%;
         }
         .col-12 {
@@ -125,6 +125,23 @@
 }
 @include Responsive(IPAD){
     .feature{
+        .row{
+            gap: 14px;
+            .col-md-6{
+                width: 49%;
+            }
+            
+        }
+    }
+}
+@include Responsive(BIGSCREEN){
+    .feature{
+        & img:nth-of-type(1){
+            top: -56%;
+        }
+        & img:nth-of-type(2){
+            top: -12%;
+        }
         .row{
             gap: 14px;
             .col-md-6{

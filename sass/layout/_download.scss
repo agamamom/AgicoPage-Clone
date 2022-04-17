@@ -203,3 +203,44 @@
         }
     }
 }
+@include Responsive(BIGSCREEN){
+    .download{
+        .download__content{
+            margin: 0;
+            h2{
+                font-size: 3.8rem;
+            }
+            p{
+                font-size: 1.4rem;
+                max-width: 75%;
+                margin: 0 auto;
+            }
+            .pulse-box{
+                a{
+                    left: 48.3%;
+                }
+                .pulsate-css1{
+                    top: 47%;
+                    left: 45.5%;
+                }
+                .pulsate-css2{
+                    top: 47%;
+                    left: 45.5%;
+                }
+                .pulsate-css3{
+                    top: 47%;
+                    left: 45.5%;    
+                }
+
+            }
+            .download__logo{
+                justify-content: space-around;
+                align-items: center;
+                img{
+                    width: 14%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

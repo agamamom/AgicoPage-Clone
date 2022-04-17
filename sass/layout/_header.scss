@@ -12,7 +12,7 @@
         box-shadow: 0px 10px 20px 0px rgba(0, 142, 236, 0.104);
         padding: 15px 0;
         .navbar{
-            .button-outline-primary{
+            .btn.button-outline-primary{
                 color: #007ac7;
                 &:hover{
                     color: #fff;
@@ -164,6 +164,54 @@
                             &:hover{
                                 color: #fff;
                             }
+                        }
+                        .nav-link{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include Responsive(BIGSCREEN){
+    .header{
+        width: 100vw;
+        .container{
+            width: 100%;
+            .navbar{
+                .btn{
+                    padding: 14px 45px;
+                    color: #fff;
+                    white-space: nowrap;
+                    margin-left: 48px;
+                }
+                .navbar-brand{
+                    height: 56px;
+                    margin-right: 6%;
+                    img{
+                        height: inherit;
+                    }
+                }
+                .navbar-toggler{
+                    color: rgba(0,0,0,.5);
+                    border-color: rgba(0,0,0,.1);
+                    padding: 0.75rem 1.75rem;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    .navbar-toggler-icon{
+                        color: #616365;
+                        i{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    .navbar-nav{
+                        align-items: center;
+                        .nav-item{
+                            white-space: nowrap;
                         }
                         .nav-link{
                             padding: 0;

@@ -143,3 +143,44 @@
 
     }
 }
+@include Responsive(BIGSCREEN){
+    .banner{
+        padding: 150px 0;
+        .row{
+            margin-right: -24%;
+            .banner-left{
+                h1{
+                    line-height: 68px;
+                    font-size: 6rem;
+                }
+                span{
+                    font-size: 200px;
+                    top: 13%;
+                    left: 3%;
+                }
+                p{
+                    margin-top: 22px;
+                    font-size: 1.4rem;
+                }
+                .banner-button{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                   .btn{
+                       padding: 10px 45px;
+                       width: max-content;
+                       margin-bottom: 14px;
+                   } 
+                }
+            }
+        }
+        .background-img{
+            right: -16%;
+            img{
+                max-width: 94%;
+            }
+        }
+
+    }
+}
+
