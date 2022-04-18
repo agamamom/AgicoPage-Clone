@@ -147,6 +147,25 @@
 }
 @include Responsive(IPAD){
     .footer-top{
+        .container{
+            padding: 130px 15px 0;
+        }
+        .row{
+            gap: 15px;
+        }
+    }
+    .footer-bottom{
+        .footer-bottom__content{
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+@include Responsive(BIGSCREEN){
+    .footer-top{
+        .container{
+            padding: 130px 15px 0;
+        }
         .row{
             gap: 15px;
         }

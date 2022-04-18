@@ -38,12 +38,12 @@ $XXL: 1399.98px;
             @content;
         }
     } @else if $canvas == IPAD {
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023.98px) {
             @content;
         }
     }
     @else if $canvas == BIGSCREEN {
-        @media only screen and (min-width: 1025px) {
+        @media only screen and (min-width: 1024px) and (max-width: 1200px){
             @content;
         }
     }

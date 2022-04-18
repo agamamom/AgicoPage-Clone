@@ -59,7 +59,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .section {
     padding: 100px 0;
   }
@@ -79,14 +79,14 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .container {
     width: 100%;
     padding: 0 15px;
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .container {
     width: 100%;
     padding: 0 15px;
@@ -103,7 +103,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 15;
   background: transparent;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -246,7 +246,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .header {
     background: #fff;
     width: 100vw;
@@ -291,7 +291,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .header {
     width: 100vw;
   }
@@ -464,7 +464,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .banner {
     padding: 150px 0;
   }
@@ -515,7 +515,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .banner {
     padding: 150px 0;
   }
@@ -689,7 +689,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .feature .row {
     gap: 14px;
   }
@@ -698,7 +698,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .feature img:nth-of-type(1) {
     top: -56%;
   }
@@ -941,7 +941,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .counter {
     text-align: center;
   }
@@ -1167,7 +1167,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .download .download__content {
     margin: 0;
   }
@@ -1205,7 +1205,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .download .download__content {
     margin: 0;
   }
@@ -1355,7 +1355,51 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .testimonial {
+    padding-bottom: 100px;
+  }
+  .testimonial .row .col-md-6 .subtitle {
+    font-size: 1.8rem;
+    color: #8b8e93;
+    font-weight: 400;
+  }
+  .testimonial .row .col-md-6 .layout-title {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  .testimonial .row .col-md-6 .testtimonial-carousel .owl-item .testimonial-slider img {
+    width: 12%;
+    margin-bottom: 4rem;
+  }
+  .testimonial .row .col-md-6 .testtimonial-carousel .owl-item .testimonial-slider p {
+    font-weight: 400;
+    color: #8b8e93;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  .testimonial .row .col-md-6 .testtimonial-carousel .owl-item .testimonial-slider .testimonial-actor {
+    color: #242f3e;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+  }
+  .testimonial .row .col-md-6 .testtimonial-carousel .owl-item .testimonial-slider .actor-status {
+    color: #8b8e93;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .testimonial::before {
+    top: 8%;
+    background-size: contain;
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .testimonial {
     padding-bottom: 100px;
   }
@@ -1581,7 +1625,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
   .blog {
     padding-bottom: 0px;
   }
@@ -1645,9 +1689,9 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .blog {
-    padding-bottom: 0px;
+    padding-bottom: 250px;
   }
   .blog .swiper-blog {
     padding-left: 13px;
@@ -1666,46 +1710,6 @@ ul {
   }
   .blog .layout-title {
     font-size: 3rem;
-  }
-  .blog .blog__subscription {
-    background: transparent;
-    height: auto;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    position: relative;
-    padding-top: 100px;
-  }
-  .blog .blog__subscription .blog__subscription--content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .blog .blog__subscription .blog__subscription--content h3 {
-    text-align: left;
-  }
-  .blog .blog__subscription .blog__subscription--content form {
-    margin-top: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 80%;
-    gap: 15px;
-  }
-  .blog .blog__subscription .blog__subscription--content form .form-control {
-    margin: 0;
-    width: 100%;
-  }
-  .blog .blog__subscription .blog__subscription--content form .btn {
-    width: 100%;
-    margin: 0;
   }
 }
 
@@ -1874,7 +1878,27 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .footer-top .container {
+    padding: 130px 15px 0;
+  }
+  .footer-top .row {
+    gap: 15px;
+  }
+  .footer-bottom .footer-bottom__content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .footer-top .container {
+    padding: 130px 15px 0;
+  }
   .footer-top .row {
     gap: 15px;
   }
